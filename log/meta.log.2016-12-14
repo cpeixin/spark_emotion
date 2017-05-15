@@ -1,0 +1,1678 @@
+2016-12-14 18:14:34.382 -[main] INFO  org.apache.spark.SparkContext  -Running Spark version 1.6.1
+2016-12-14 18:14:35.929 -[main] WARN  org.apache.hadoop.util.NativeCodeLoader  -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-14 18:14:36.200 -[main] INFO  org.apache.spark.SecurityManager  -Changing view acls to: cluster
+2016-12-14 18:14:36.201 -[main] INFO  org.apache.spark.SecurityManager  -Changing modify acls to: cluster
+2016-12-14 18:14:36.202 -[main] INFO  org.apache.spark.SecurityManager  -SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(cluster); users with modify permissions: Set(cluster)
+2016-12-14 18:14:37.127 -[main] INFO  org.apache.spark.util.Utils  -Successfully started service 'sparkDriver' on port 59827.
+2016-12-14 18:14:37.653 -[sparkDriverActorSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 18:14:37.739 -[sparkDriverActorSystem-akka.actor.default-dispatcher-4] INFO  Remoting  -Starting remoting
+2016-12-14 18:14:38.090 -[sparkDriverActorSystem-akka.actor.default-dispatcher-4] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:59842]
+2016-12-14 18:14:38.099 -[main] INFO  org.apache.spark.util.Utils  -Successfully started service 'sparkDriverActorSystem' on port 59842.
+2016-12-14 18:14:38.130 -[main] INFO  org.apache.spark.SparkEnv  -Registering MapOutputTracker
+2016-12-14 18:14:38.154 -[main] ERROR org.apache.spark.SparkContext  -Error initializing SparkContext.
+java.lang.IllegalArgumentException: System memory 259522560 must be at least 4.718592E8. Please use a larger heap size.
+	at org.apache.spark.memory.UnifiedMemoryManager$.getMaxMemory(UnifiedMemoryManager.scala:193)
+	at org.apache.spark.memory.UnifiedMemoryManager$.apply(UnifiedMemoryManager.scala:175)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:354)
+	at org.apache.spark.SparkEnv$.createDriverEnv(SparkEnv.scala:193)
+	at org.apache.spark.SparkContext.createSparkEnv(SparkContext.scala:288)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:457)
+	at org.apache.spark.streaming.StreamingContext$.createNewSparkContext(StreamingContext.scala:874)
+	at org.apache.spark.streaming.StreamingContext.<init>(StreamingContext.scala:81)
+	at sparkMySQL_weibo_emotion$.main(sparkMySQL_weibo_emotion.scala:36)
+	at sparkMySQL_weibo_emotion.main(sparkMySQL_weibo_emotion.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2016-12-14 18:14:38.179 -[main] INFO  org.apache.spark.SparkContext  -Successfully stopped SparkContext
+2016-12-14 18:14:38.183 -[Thread-0] INFO  org.apache.spark.util.ShutdownHookManager  -Shutdown hook called
+2016-12-14 18:18:33.414 -[main] INFO  org.apache.spark.SparkContext  -Running Spark version 1.6.1
+2016-12-14 18:18:33.714 -[main] WARN  org.apache.hadoop.util.NativeCodeLoader  -Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-12-14 18:18:33.812 -[main] INFO  org.apache.spark.SecurityManager  -Changing view acls to: cluster
+2016-12-14 18:18:33.812 -[main] INFO  org.apache.spark.SecurityManager  -Changing modify acls to: cluster
+2016-12-14 18:18:33.812 -[main] INFO  org.apache.spark.SecurityManager  -SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(cluster); users with modify permissions: Set(cluster)
+2016-12-14 18:18:34.357 -[main] INFO  org.apache.spark.util.Utils  -Successfully started service 'sparkDriver' on port 60474.
+2016-12-14 18:18:34.620 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 18:18:34.654 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  Remoting  -Starting remoting
+2016-12-14 18:18:34.808 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:60487]
+2016-12-14 18:18:34.813 -[main] INFO  org.apache.spark.util.Utils  -Successfully started service 'sparkDriverActorSystem' on port 60487.
+2016-12-14 18:18:34.824 -[main] INFO  org.apache.spark.SparkEnv  -Registering MapOutputTracker
+2016-12-14 18:18:34.860 -[main] INFO  org.apache.spark.SparkEnv  -Registering BlockManagerMaster
+2016-12-14 18:18:34.873 -[main] INFO  org.apache.spark.storage.DiskBlockManager  -Created local directory at C:\Users\DN\AppData\Local\Temp\blockmgr-87970dd2-752c-4954-b62e-76c50fc1f33e
+2016-12-14 18:18:34.892 -[main] INFO  org.apache.spark.storage.MemoryStore  -MemoryStore started with capacity 517.4 MB
+2016-12-14 18:18:34.973 -[main] INFO  org.apache.spark.SparkEnv  -Registering OutputCommitCoordinator
+2016-12-14 18:18:35.293 -[main] INFO  org.spark-project.jetty.server.Server  -jetty-8.y.z-SNAPSHOT
+2016-12-14 18:18:35.383 -[main] INFO  org.spark-project.jetty.server.AbstractConnector  -Started SelectChannelConnector@0.0.0.0:4040
+2016-12-14 18:18:35.383 -[main] INFO  org.apache.spark.util.Utils  -Successfully started service 'SparkUI' on port 4040.
+2016-12-14 18:18:35.394 -[main] INFO  org.apache.spark.ui.SparkUI  -Started SparkUI at http://192.168.31.154:4040
+2016-12-14 18:18:35.544 -[main] INFO  org.apache.spark.executor.Executor  -Starting executor ID driver on host localhost
+2016-12-14 18:18:35.576 -[main] INFO  org.apache.spark.util.Utils  -Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 60500.
+2016-12-14 18:18:35.577 -[main] INFO  org.apache.spark.network.netty.NettyBlockTransferService  -Server created on 60500
+2016-12-14 18:18:35.595 -[main] INFO  org.apache.spark.storage.BlockManagerMaster  -Trying to register BlockManager
+2016-12-14 18:18:35.597 -[dispatcher-event-loop-2] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint  -Registering block manager localhost:60500 with 517.4 MB RAM, BlockManagerId(driver, localhost, 60500)
+2016-12-14 18:18:35.609 -[main] INFO  org.apache.spark.storage.BlockManagerMaster  -Registered BlockManager
+2016-12-14 18:18:36.281 -[main] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 18:18:36.290 -[main] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 18:18:36.290 -[main] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 18:18:36.290 -[main] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 18:18:36.290 -[main] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 18:18:37.142 -[streaming-start] INFO  org.apache.spark.streaming.dstream.ForEachDStream  -metadataCleanupDelay = -1
+2016-12-14 18:18:37.144 -[streaming-start] INFO  org.apache.spark.streaming.dstream.MappedDStream  -metadataCleanupDelay = -1
+2016-12-14 18:18:37.144 -[streaming-start] INFO  org.apache.spark.streaming.kafka.DirectKafkaInputDStream  -metadataCleanupDelay = -1
+2016-12-14 18:18:37.144 -[streaming-start] INFO  org.apache.spark.streaming.kafka.DirectKafkaInputDStream  -Slide time = 5000 ms
+2016-12-14 18:18:37.145 -[streaming-start] INFO  org.apache.spark.streaming.kafka.DirectKafkaInputDStream  -Storage level = StorageLevel(false, false, false, false, 1)
+2016-12-14 18:18:37.146 -[streaming-start] INFO  org.apache.spark.streaming.kafka.DirectKafkaInputDStream  -Checkpoint interval = null
+2016-12-14 18:18:37.146 -[streaming-start] INFO  org.apache.spark.streaming.kafka.DirectKafkaInputDStream  -Remember duration = 5000 ms
+2016-12-14 18:18:37.147 -[streaming-start] INFO  org.apache.spark.streaming.kafka.DirectKafkaInputDStream  -Initialized and validated org.apache.spark.streaming.kafka.DirectKafkaInputDStream@b63f8e
+2016-12-14 18:18:37.147 -[streaming-start] INFO  org.apache.spark.streaming.dstream.MappedDStream  -Slide time = 5000 ms
+2016-12-14 18:18:37.147 -[streaming-start] INFO  org.apache.spark.streaming.dstream.MappedDStream  -Storage level = StorageLevel(false, false, false, false, 1)
+2016-12-14 18:18:37.148 -[streaming-start] INFO  org.apache.spark.streaming.dstream.MappedDStream  -Checkpoint interval = null
+2016-12-14 18:18:37.148 -[streaming-start] INFO  org.apache.spark.streaming.dstream.MappedDStream  -Remember duration = 5000 ms
+2016-12-14 18:18:37.148 -[streaming-start] INFO  org.apache.spark.streaming.dstream.MappedDStream  -Initialized and validated org.apache.spark.streaming.dstream.MappedDStream@969088
+2016-12-14 18:18:37.148 -[streaming-start] INFO  org.apache.spark.streaming.dstream.ForEachDStream  -Slide time = 5000 ms
+2016-12-14 18:18:37.148 -[streaming-start] INFO  org.apache.spark.streaming.dstream.ForEachDStream  -Storage level = StorageLevel(false, false, false, false, 1)
+2016-12-14 18:18:37.148 -[streaming-start] INFO  org.apache.spark.streaming.dstream.ForEachDStream  -Checkpoint interval = null
+2016-12-14 18:18:37.148 -[streaming-start] INFO  org.apache.spark.streaming.dstream.ForEachDStream  -Remember duration = 5000 ms
+2016-12-14 18:18:37.148 -[streaming-start] INFO  org.apache.spark.streaming.dstream.ForEachDStream  -Initialized and validated org.apache.spark.streaming.dstream.ForEachDStream@f92d8b
+2016-12-14 18:18:37.234 -[streaming-start] INFO  org.apache.spark.streaming.util.RecurringTimer  -Started timer for JobGenerator at time 1481710720000
+2016-12-14 18:18:37.261 -[streaming-start] INFO  org.apache.spark.streaming.scheduler.JobGenerator  -Started JobGenerator at 1481710720000 ms
+2016-12-14 18:18:37.262 -[streaming-start] INFO  org.apache.spark.streaming.scheduler.JobScheduler  -Started JobScheduler
+2016-12-14 18:18:37.274 -[main] INFO  org.apache.spark.streaming.StreamingContext  -StreamingContext started
+2016-12-14 18:18:40.156 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 18:18:40.157 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 18:18:40.157 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 18:18:40.157 -[JobGenerator] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 18:18:40.158 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 18:18:40.230 -[JobGenerator] INFO  org.apache.spark.streaming.scheduler.JobScheduler  -Added jobs for time 1481710720000 ms
+2016-12-14 18:18:40.233 -[JobScheduler] INFO  org.apache.spark.streaming.scheduler.JobScheduler  -Starting job streaming job 1481710720000 ms.0 from job set of time 1481710720000 ms
+2016-12-14 18:18:40.272 -[streaming-job-executor-0] INFO  org.apache.spark.SparkContext  -Starting job: foreachPartition at sparkMySQL_weibo_emotion.scala:53
+2016-12-14 18:18:40.334 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler  -Got job 0 (foreachPartition at sparkMySQL_weibo_emotion.scala:53) with 3 output partitions
+2016-12-14 18:18:40.334 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler  -Final stage: ResultStage 0 (foreachPartition at sparkMySQL_weibo_emotion.scala:53)
+2016-12-14 18:18:40.335 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler  -Parents of final stage: List()
+2016-12-14 18:18:40.337 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler  -Missing parents: List()
+2016-12-14 18:18:40.347 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler  -Submitting ResultStage 0 (MapPartitionsRDD[1] at map at sparkMySQL_weibo_emotion.scala:46), which has no missing parents
+2016-12-14 18:18:40.640 -[dag-scheduler-event-loop] WARN  org.apache.spark.util.SizeEstimator  -Failed to check whether UseCompressedOops is set; assuming yes
+2016-12-14 18:18:40.663 -[dag-scheduler-event-loop] INFO  org.apache.spark.storage.MemoryStore  -Block broadcast_0 stored as values in memory (estimated size 3.1 KB, free 3.1 KB)
+2016-12-14 18:18:40.697 -[dag-scheduler-event-loop] INFO  org.apache.spark.storage.MemoryStore  -Block broadcast_0_piece0 stored as bytes in memory (estimated size 1822.0 B, free 4.9 KB)
+2016-12-14 18:18:40.701 -[dispatcher-event-loop-0] INFO  org.apache.spark.storage.BlockManagerInfo  -Added broadcast_0_piece0 in memory on localhost:60500 (size: 1822.0 B, free: 517.4 MB)
+2016-12-14 18:18:40.705 -[dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext  -Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+2016-12-14 18:18:40.713 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler  -Submitting 3 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at map at sparkMySQL_weibo_emotion.scala:46)
+2016-12-14 18:18:40.717 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl  -Adding task set 0.0 with 3 tasks
+2016-12-14 18:18:40.797 -[dispatcher-event-loop-1] INFO  org.apache.spark.scheduler.TaskSetManager  -Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,ANY, 2020 bytes)
+2016-12-14 18:18:40.799 -[dispatcher-event-loop-1] INFO  org.apache.spark.scheduler.TaskSetManager  -Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,ANY, 2020 bytes)
+2016-12-14 18:18:40.806 -[Executor task launch worker-0] INFO  org.apache.spark.executor.Executor  -Running task 0.0 in stage 0.0 (TID 0)
+2016-12-14 18:18:40.806 -[Executor task launch worker-1] INFO  org.apache.spark.executor.Executor  -Running task 1.0 in stage 0.0 (TID 1)
+2016-12-14 18:18:40.852 -[Executor task launch worker-1] INFO  org.apache.spark.streaming.kafka.KafkaRDD  -Computing topic weibo_content2, partition 1 offsets 0 -> 271
+2016-12-14 18:18:40.852 -[Executor task launch worker-0] INFO  org.apache.spark.streaming.kafka.KafkaRDD  -Computing topic weibo_content2, partition 0 offsets 0 -> 259
+2016-12-14 18:18:40.852 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 18:18:40.852 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 18:18:40.853 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 18:18:40.853 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 18:18:40.853 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 18:18:40.853 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 18:18:40.853 -[Executor task launch worker-1] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 18:18:40.853 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 18:18:40.853 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 18:18:40.853 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 18:18:41.621 -[Executor task launch worker-1] ERROR org.apache.spark.executor.Executor  -Exception in task 1.0 in stage 0.0 (TID 1)
+java.lang.NoClassDefFoundError: org/dom4j/DocumentException
+	at com.whos.sa.common.Config.loadConfig(Config.java:33)
+	at com.whos.sa.common.Config.<init>(Config.java:23)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.dom4j.DocumentException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 22 more
+2016-12-14 18:18:41.621 -[Executor task launch worker-0] ERROR org.apache.spark.executor.Executor  -Exception in task 0.0 in stage 0.0 (TID 0)
+java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-14 18:18:41.678 -[Executor task launch worker-1] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -Uncaught exception in thread Thread[Executor task launch worker-1,5,main]
+java.lang.NoClassDefFoundError: org/dom4j/DocumentException
+	at com.whos.sa.common.Config.loadConfig(Config.java:33)
+	at com.whos.sa.common.Config.<init>(Config.java:23)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.dom4j.DocumentException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 22 more
+2016-12-14 18:18:41.678 -[Executor task launch worker-0] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -Uncaught exception in thread Thread[Executor task launch worker-0,5,main]
+java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-14 18:18:41.680 -[dispatcher-event-loop-0] INFO  org.apache.spark.scheduler.TaskSetManager  -Starting task 2.0 in stage 0.0 (TID 2, localhost, partition 2,ANY, 2020 bytes)
+2016-12-14 18:18:41.683 -[Executor task launch worker-2] INFO  org.apache.spark.executor.Executor  -Running task 2.0 in stage 0.0 (TID 2)
+2016-12-14 18:18:41.686 -[Executor task launch worker-2] INFO  org.apache.spark.streaming.kafka.KafkaRDD  -Computing topic weibo_content2, partition 2 offsets 0 -> 264
+2016-12-14 18:18:41.686 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 18:18:41.687 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 18:18:41.687 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 18:18:41.687 -[Executor task launch worker-2] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 18:18:41.687 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 18:18:41.689 -[Thread-0] INFO  org.apache.spark.streaming.StreamingContext  -Invoking stop(stopGracefully=false) from shutdown hook
+2016-12-14 18:18:41.691 -[Thread-0] INFO  org.apache.spark.streaming.scheduler.JobGenerator  -Stopping JobGenerator immediately
+2016-12-14 18:18:41.692 -[task-result-getter-1] WARN  org.apache.spark.scheduler.TaskSetManager  -Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-12-14 18:18:41.694 -[task-result-getter-1] ERROR org.apache.spark.scheduler.TaskSetManager  -Task 0 in stage 0.0 failed 1 times; aborting job
+2016-12-14 18:18:41.695 -[task-result-getter-0] WARN  org.apache.spark.scheduler.TaskSetManager  -Lost task 1.0 in stage 0.0 (TID 1, localhost): java.lang.NoClassDefFoundError: org/dom4j/DocumentException
+	at com.whos.sa.common.Config.loadConfig(Config.java:33)
+	at com.whos.sa.common.Config.<init>(Config.java:23)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.dom4j.DocumentException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 22 more
+
+2016-12-14 18:18:41.700 -[Thread-0] INFO  org.apache.spark.streaming.util.RecurringTimer  -Stopped timer for JobGenerator after time 1481710720000
+2016-12-14 18:18:41.701 -[Thread-0] INFO  org.apache.spark.streaming.scheduler.JobGenerator  -Stopped JobGenerator
+2016-12-14 18:18:41.701 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl  -Cancelling stage 0
+2016-12-14 18:18:41.707 -[dispatcher-event-loop-2] INFO  org.apache.spark.executor.Executor  -Executor is trying to kill task 2.0 in stage 0.0 (TID 2)
+2016-12-14 18:18:41.708 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl  -Stage 0 was cancelled
+2016-12-14 18:18:41.709 -[dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler  -ResultStage 0 (foreachPartition at sparkMySQL_weibo_emotion.scala:53) failed in 0.965 s
+2016-12-14 18:18:41.710 -[streaming-job-executor-0] INFO  org.apache.spark.scheduler.DAGScheduler  -Job 0 failed: foreachPartition at sparkMySQL_weibo_emotion.scala:53, took 1.437322 s
+2016-12-14 18:18:41.728 -[JobScheduler] ERROR org.apache.spark.streaming.scheduler.StreamingListenerBus  -StreamingListenerBus has already stopped! Dropping event StreamingListenerOutputOperationCompleted(OutputOperationInfo(1481710720000 ms,0,foreachRDD at sparkMySQL_weibo_emotion.scala:52,org.apache.spark.streaming.dstream.DStream.foreachRDD(DStream.scala:659)
+sparkMySQL_weibo_emotion$.main(sparkMySQL_weibo_emotion.scala:52)
+sparkMySQL_weibo_emotion.main(sparkMySQL_weibo_emotion.scala)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:144),Some(1481710720231),Some(1481710721711),Some(org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1431)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1419)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1418)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1418)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1640)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1599)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1588)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:620)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1832)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1845)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1929)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:918)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:918)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:52)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:426)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply$mcV$sp(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at scala.util.Try$.apply(Try.scala:161)
+	at org.apache.spark.streaming.scheduler.Job.run(Job.scala:39)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply$mcV$sp(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:57)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler.run(JobScheduler.scala:223)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	... 3 more
+)))
+2016-12-14 18:18:41.736 -[JobScheduler] INFO  org.apache.spark.streaming.scheduler.JobScheduler  -Finished job streaming job 1481710720000 ms.0 from job set of time 1481710720000 ms
+2016-12-14 18:18:41.737 -[JobScheduler] INFO  org.apache.spark.streaming.scheduler.JobScheduler  -Total delay: 1.711 s for time 1481710720000 ms (execution: 1.480 s)
+2016-12-14 18:18:41.739 -[JobScheduler] ERROR org.apache.spark.streaming.scheduler.StreamingListenerBus  -StreamingListenerBus has already stopped! Dropping event StreamingListenerBatchCompleted(BatchInfo(1481710720000 ms,Map(0 -> StreamInputInfo(0,794,Map(offsets -> List(OffsetRange(topic: 'weibo_content2', partition: 0, range: [0 -> 259]), OffsetRange(topic: 'weibo_content2', partition: 1, range: [0 -> 271]), OffsetRange(topic: 'weibo_content2', partition: 2, range: [0 -> 264])), Description -> topic: weibo_content2	partition: 0	offsets: 0 to 259
+topic: weibo_content2	partition: 1	offsets: 0 to 271
+topic: weibo_content2	partition: 2	offsets: 0 to 264))),1481710720223,Some(1481710720231),Some(1481710721711),Map(0 -> OutputOperationInfo(1481710720000 ms,0,foreachRDD at sparkMySQL_weibo_emotion.scala:52,org.apache.spark.streaming.dstream.DStream.foreachRDD(DStream.scala:659)
+sparkMySQL_weibo_emotion$.main(sparkMySQL_weibo_emotion.scala:52)
+sparkMySQL_weibo_emotion.main(sparkMySQL_weibo_emotion.scala)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:144),Some(1481710720231),Some(1481710721711),Some(org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1431)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1419)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1418)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1418)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1640)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1599)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1588)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:620)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1832)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1845)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1929)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:918)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:918)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:52)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:426)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply$mcV$sp(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at scala.util.Try$.apply(Try.scala:161)
+	at org.apache.spark.streaming.scheduler.Job.run(Job.scala:39)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply$mcV$sp(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:57)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler.run(JobScheduler.scala:223)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	... 3 more
+)))))
+2016-12-14 18:18:41.745 -[Thread-0] INFO  org.apache.spark.streaming.scheduler.JobScheduler  -Stopped JobScheduler
+2016-12-14 18:18:41.746 -[Executor task launch worker-2] ERROR org.apache.spark.executor.Executor  -Exception in task 2.0 in stage 0.0 (TID 2)
+java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-14 18:18:41.747 -[Executor task launch worker-2] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -[Container in shutdown] Uncaught exception in thread Thread[Executor task launch worker-2,5,main]
+java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:19)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:49)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:46)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:60)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-14 18:18:41.753 -[task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSetManager  -Lost task 2.0 in stage 0.0 (TID 2) on executor localhost: java.lang.NoClassDefFoundError (Could not initialize class com.whos.sa.common.Config) [duplicate 1]
+2016-12-14 18:18:41.754 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/streaming,null}
+2016-12-14 18:18:41.754 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/streaming/batch,null}
+2016-12-14 18:18:41.755 -[task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSchedulerImpl  -Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2016-12-14 18:18:41.756 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/static/streaming,null}
+2016-12-14 18:18:41.756 -[Thread-0] INFO  org.apache.spark.streaming.StreamingContext  -StreamingContext stopped successfully
+2016-12-14 18:18:41.757 -[Thread-0] INFO  org.apache.spark.SparkContext  -Invoking stop() from shutdown hook
+2016-12-14 18:18:41.768 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/streaming/batch/json,null}
+2016-12-14 18:18:41.768 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/streaming/json,null}
+2016-12-14 18:18:41.768 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2016-12-14 18:18:41.769 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2016-12-14 18:18:41.769 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/api,null}
+2016-12-14 18:18:41.769 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/,null}
+2016-12-14 18:18:41.769 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/static,null}
+2016-12-14 18:18:41.769 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2016-12-14 18:18:41.769 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2016-12-14 18:18:41.770 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2016-12-14 18:18:41.770 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/executors,null}
+2016-12-14 18:18:41.770 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2016-12-14 18:18:41.770 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/environment,null}
+2016-12-14 18:18:41.770 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2016-12-14 18:18:41.770 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2016-12-14 18:18:41.771 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2016-12-14 18:18:41.771 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/storage,null}
+2016-12-14 18:18:41.771 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2016-12-14 18:18:41.771 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2016-12-14 18:18:41.771 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2016-12-14 18:18:41.771 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2016-12-14 18:18:41.772 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2016-12-14 18:18:41.772 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/stages,null}
+2016-12-14 18:18:41.772 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2016-12-14 18:18:41.772 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2016-12-14 18:18:41.772 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2016-12-14 18:18:41.772 -[Thread-0] INFO  org.spark-project.jetty.server.handler.ContextHandler  -stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2016-12-14 18:18:41.823 -[Thread-0] INFO  org.apache.spark.ui.SparkUI  -Stopped Spark web UI at http://192.168.31.154:4040
+2016-12-14 18:18:41.832 -[dispatcher-event-loop-2] INFO  org.apache.spark.MapOutputTrackerMasterEndpoint  -MapOutputTrackerMasterEndpoint stopped!
+2016-12-14 18:18:41.838 -[Thread-0] INFO  org.apache.spark.storage.MemoryStore  -MemoryStore cleared
+2016-12-14 18:18:41.839 -[Thread-0] INFO  org.apache.spark.storage.BlockManager  -BlockManager stopped
+2016-12-14 18:18:41.871 -[Thread-0] INFO  org.apache.spark.storage.BlockManagerMaster  -BlockManagerMaster stopped
+2016-12-14 18:18:41.873 -[dispatcher-event-loop-1] INFO  org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint  -OutputCommitCoordinator stopped!
+2016-12-14 18:18:41.876 -[Thread-0] INFO  org.apache.spark.SparkContext  -Successfully stopped SparkContext
+2016-12-14 18:18:41.877 -[Thread-0] INFO  org.apache.spark.util.ShutdownHookManager  -Shutdown hook called
+2016-12-14 18:18:41.877 -[Thread-0] INFO  org.apache.spark.util.ShutdownHookManager  -Deleting directory C:\Users\DN\AppData\Local\Temp\spark-ac5d7649-c42c-4de9-bf8c-1cbc13e64a8b
+2016-12-14 19:13:50.990 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 19:13:51.073 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  Remoting  -Starting remoting
+2016-12-14 19:13:52.669 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:55094]
+2016-12-14 19:13:56.412 -[main] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 19:13:56.713 -[main] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 19:13:56.714 -[main] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 19:13:56.715 -[main] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 19:13:56.715 -[main] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 19:14:00.073 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 19:14:00.074 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 19:14:00.074 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 19:14:00.074 -[JobGenerator] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 19:14:00.074 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 19:14:01.134 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 19:14:01.134 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 19:14:01.135 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 19:14:01.135 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 19:14:01.135 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 19:14:01.135 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 19:14:01.136 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 19:14:01.136 -[Executor task launch worker-1] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 19:14:01.136 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 19:14:01.136 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 19:14:02.086 -[Executor task launch worker-0] ERROR com.whos.sa.util.log.LogUtil  -java.lang.Exception: org.dom4j.DocumentException: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\config.xml (文件名、目录名或卷标语法不正确。) Nested exception: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\config.xml (文件名、目录名或卷标语法不正确。)
+2016-12-14 19:14:02.120 -[Executor task launch worker-0] WARN  net.sf.ehcache.config.ConfigurationFactory  -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/DN/Desktop/Zzz/ehcache-2.9.0.jar!/ehcache-failsafe.xml
+2016-12-14 19:14:04.112 -[Executor task launch worker-0] ERROR com.whos.sa.util.log.LogUtil  -java.io.FileNotFoundException: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\dictionary\BosonNLP_sentiment_score.txt (文件名、目录名或卷标语法不正确。)
+2016-12-14 19:14:04.116 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -look up in mmseg.dic.path=null
+2016-12-14 19:14:04.116 -[Executor task launch worker-1] INFO  com.chenlb.mmseg4j.Dictionary  -look up in mmseg.dic.path=null
+2016-12-14 19:14:04.117 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -look up in classpath=file:/C:/Users/DN/Desktop/Zzz/mmseg4j-core-1.10.0.jar!/data
+2016-12-14 19:14:04.117 -[Executor task launch worker-1] INFO  com.chenlb.mmseg4j.Dictionary  -look up in classpath=file:/C:/Users/DN/Desktop/Zzz/mmseg4j-core-1.10.0.jar!/data
+2016-12-14 19:14:04.117 -[Executor task launch worker-0] WARN  com.chenlb.mmseg4j.Dictionary  -defalut dic path=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data not exist
+2016-12-14 19:14:04.117 -[Executor task launch worker-1] WARN  com.chenlb.mmseg4j.Dictionary  -defalut dic path=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data not exist
+2016-12-14 19:14:04.117 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -try to load dir=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data
+2016-12-14 19:14:04.117 -[Executor task launch worker-1] INFO  com.chenlb.mmseg4j.Dictionary  -try to load dir=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data
+2016-12-14 19:14:04.154 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -chars loaded time=36ms, line=12638, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\chars.dic
+2016-12-14 19:14:04.154 -[Executor task launch worker-1] INFO  com.chenlb.mmseg4j.Dictionary  -chars loaded time=35ms, line=12638, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\chars.dic
+2016-12-14 19:14:04.802 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -words loaded time=646ms, line=149853, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\words.dic
+2016-12-14 19:14:04.802 -[Executor task launch worker-1] INFO  com.chenlb.mmseg4j.Dictionary  -words loaded time=646ms, line=149853, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\words.dic
+2016-12-14 19:14:04.818 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -load all dic use time=700ms
+2016-12-14 19:14:04.818 -[Executor task launch worker-1] INFO  com.chenlb.mmseg4j.Dictionary  -load all dic use time=699ms
+2016-12-14 19:14:04.825 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -unit loaded time=1ms, line=22, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\units.dic
+2016-12-14 19:14:04.826 -[Executor task launch worker-1] INFO  com.chenlb.mmseg4j.Dictionary  -unit loaded time=0ms, line=22, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\units.dic
+2016-12-14 19:14:04.950 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 19:14:04.950 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 19:14:04.950 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 19:14:04.950 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 19:14:04.950 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 19:14:04.996 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -try to load dir=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data
+2016-12-14 20:39:24.934 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 20:39:24.970 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting  -Starting remoting
+2016-12-14 20:39:25.104 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:50250]
+2016-12-14 20:39:25.770 -[main] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:39:25.777 -[main] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:39:25.778 -[main] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:39:25.778 -[main] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:39:25.778 -[main] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:39:26.833 -[main] INFO  kafka.consumer.SimpleConsumer  -Reconnect due to socket error: java.nio.channels.ClosedChannelException
+2016-12-14 20:42:50.002 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 20:42:50.039 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting  -Starting remoting
+2016-12-14 20:42:50.179 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:50352]
+2016-12-14 20:42:50.737 -[main] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:42:50.744 -[main] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:42:50.744 -[main] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:42:50.745 -[main] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:42:50.745 -[main] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:42:55.064 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:42:55.064 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:42:55.065 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:42:55.065 -[JobGenerator] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:42:55.065 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:42:55.763 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:42:55.763 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:42:55.763 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:42:55.764 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:42:55.764 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:42:55.764 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:42:55.764 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:42:55.765 -[Executor task launch worker-2] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:42:55.765 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:42:55.765 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:42:55.765 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:42:55.765 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:42:55.766 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:42:55.765 -[Executor task launch worker-1] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:42:55.766 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:44:05.498 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 20:44:05.533 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  Remoting  -Starting remoting
+2016-12-14 20:44:05.671 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:50420]
+2016-12-14 20:44:06.227 -[main] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:44:06.233 -[main] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:44:06.234 -[main] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:44:06.234 -[main] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:44:06.234 -[main] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:44:10.111 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:44:10.111 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:44:10.112 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:44:10.112 -[JobGenerator] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:44:10.112 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:44:10.379 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:44:10.379 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:44:10.380 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:44:10.380 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:44:10.380 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:44:10.380 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:44:10.381 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:44:10.381 -[Executor task launch worker-1] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:44:10.381 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:44:10.381 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:44:10.813 -[Executor task launch worker-0] ERROR org.apache.spark.executor.Executor  -Exception in task 0.0 in stage 0.0 (TID 0)
+java.lang.NoClassDefFoundError: org/dom4j/DocumentException
+	at com.whos.sa.common.Config.loadConfig(Config.java:33)
+	at com.whos.sa.common.Config.<init>(Config.java:23)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.dom4j.DocumentException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 22 more
+2016-12-14 20:44:10.837 -[Executor task launch worker-0] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -Uncaught exception in thread Thread[Executor task launch worker-0,5,main]
+java.lang.NoClassDefFoundError: org/dom4j/DocumentException
+	at com.whos.sa.common.Config.loadConfig(Config.java:33)
+	at com.whos.sa.common.Config.<init>(Config.java:23)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.dom4j.DocumentException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 22 more
+2016-12-14 20:44:10.841 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:44:10.842 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:44:10.842 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:44:10.842 -[Executor task launch worker-2] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:44:10.843 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:44:10.845 -[task-result-getter-0] ERROR org.apache.spark.scheduler.TaskSetManager  -Task 0 in stage 0.0 failed 1 times; aborting job
+2016-12-14 20:44:10.858 -[Executor task launch worker-2] ERROR org.apache.spark.executor.Executor  -Exception in task 2.0 in stage 0.0 (TID 2)
+java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-14 20:44:10.859 -[Executor task launch worker-2] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -[Container in shutdown] Uncaught exception in thread Thread[Executor task launch worker-2,5,main]
+java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-14 20:44:10.863 -[JobScheduler] ERROR org.apache.spark.streaming.scheduler.StreamingListenerBus  -StreamingListenerBus has already stopped! Dropping event StreamingListenerBatchCompleted(BatchInfo(1481719450000 ms,Map(0 -> StreamInputInfo(0,794,Map(offsets -> List(OffsetRange(topic: 'weibo_content2', partition: 0, range: [0 -> 259]), OffsetRange(topic: 'weibo_content2', partition: 1, range: [0 -> 271]), OffsetRange(topic: 'weibo_content2', partition: 2, range: [0 -> 264])), Description -> topic: weibo_content2	partition: 0	offsets: 0 to 259
+topic: weibo_content2	partition: 1	offsets: 0 to 271
+topic: weibo_content2	partition: 2	offsets: 0 to 264))),1481719450139,Some(1481719450145),Some(1481719450860),Map(0 -> OutputOperationInfo(1481719450000 ms,0,foreachRDD at sparkMySQL_weibo_emotion.scala:53,org.apache.spark.streaming.dstream.DStream.foreachRDD(DStream.scala:659)
+sparkMySQL_weibo_emotion$.main(sparkMySQL_weibo_emotion.scala:53)
+sparkMySQL_weibo_emotion.main(sparkMySQL_weibo_emotion.scala)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:144),Some(1481719450145),Some(1481719450860),Some(org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.NoClassDefFoundError: org/dom4j/DocumentException
+	at com.whos.sa.common.Config.loadConfig(Config.java:33)
+	at com.whos.sa.common.Config.<init>(Config.java:23)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.dom4j.DocumentException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 22 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1431)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1419)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1418)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1418)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1640)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1599)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1588)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:620)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1832)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1845)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1929)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:918)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:918)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:426)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply$mcV$sp(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at scala.util.Try$.apply(Try.scala:161)
+	at org.apache.spark.streaming.scheduler.Job.run(Job.scala:39)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply$mcV$sp(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:57)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler.run(JobScheduler.scala:223)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: org/dom4j/DocumentException
+	at com.whos.sa.common.Config.loadConfig(Config.java:33)
+	at com.whos.sa.common.Config.<init>(Config.java:23)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	... 3 more
+Caused by: java.lang.ClassNotFoundException: org.dom4j.DocumentException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 22 more
+)))))
+2016-12-14 20:46:14.580 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 20:46:14.613 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  Remoting  -Starting remoting
+2016-12-14 20:46:14.742 -[sparkDriverActorSystem-akka.actor.default-dispatcher-2] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:50483]
+2016-12-14 20:46:15.539 -[main] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:46:15.546 -[main] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:46:15.546 -[main] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:46:15.547 -[main] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:46:15.547 -[main] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:46:20.078 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:46:20.079 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:46:20.079 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:46:20.079 -[JobGenerator] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:46:20.080 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:46:20.479 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:46:20.479 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:46:20.479 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:46:20.479 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:46:20.480 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:46:20.480 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:46:20.480 -[Executor task launch worker-1] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:46:20.480 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:46:20.480 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:46:20.480 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:46:20.839 -[Executor task launch worker-0] ERROR com.whos.sa.util.log.LogUtil  -java.lang.Exception: org.dom4j.DocumentException: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\config.xml (文件名、目录名或卷标语法不正确。) Nested exception: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\config.xml (文件名、目录名或卷标语法不正确。)
+2016-12-14 20:46:20.845 -[Executor task launch worker-0] ERROR org.apache.spark.executor.Executor  -Exception in task 0.0 in stage 0.0 (TID 0)
+java.lang.NoClassDefFoundError: net/sf/ehcache/CacheManager
+	at com.whos.sa.cache.impl.CrawlCacheManagerImpl.<init>(CrawlCacheManagerImpl.java:29)
+	at com.whos.sa.cache.CacheFactory.<clinit>(CacheFactory.java:7)
+	at com.whos.sa.common.Config.createCache(Config.java:47)
+	at com.whos.sa.common.Config.<init>(Config.java:24)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: net.sf.ehcache.CacheManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 more
+2016-12-14 20:46:20.858 -[Executor task launch worker-0] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -Uncaught exception in thread Thread[Executor task launch worker-0,5,main]
+java.lang.NoClassDefFoundError: net/sf/ehcache/CacheManager
+	at com.whos.sa.cache.impl.CrawlCacheManagerImpl.<init>(CrawlCacheManagerImpl.java:29)
+	at com.whos.sa.cache.CacheFactory.<clinit>(CacheFactory.java:7)
+	at com.whos.sa.common.Config.createCache(Config.java:47)
+	at com.whos.sa.common.Config.<init>(Config.java:24)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: net.sf.ehcache.CacheManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 more
+2016-12-14 20:46:20.865 -[task-result-getter-0] ERROR org.apache.spark.scheduler.TaskSetManager  -Task 0 in stage 0.0 failed 1 times; aborting job
+2016-12-14 20:46:20.866 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:46:20.868 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:46:20.868 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:46:20.868 -[Executor task launch worker-2] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:46:20.868 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:46:20.879 -[JobScheduler] ERROR org.apache.spark.streaming.scheduler.StreamingListenerBus  -StreamingListenerBus has already stopped! Dropping event StreamingListenerOutputOperationCompleted(OutputOperationInfo(1481719580000 ms,0,foreachRDD at sparkMySQL_weibo_emotion.scala:53,org.apache.spark.streaming.dstream.DStream.foreachRDD(DStream.scala:659)
+sparkMySQL_weibo_emotion$.main(sparkMySQL_weibo_emotion.scala:53)
+sparkMySQL_weibo_emotion.main(sparkMySQL_weibo_emotion.scala)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:144),Some(1481719580134),Some(1481719580877),Some(org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.NoClassDefFoundError: net/sf/ehcache/CacheManager
+	at com.whos.sa.cache.impl.CrawlCacheManagerImpl.<init>(CrawlCacheManagerImpl.java:29)
+	at com.whos.sa.cache.CacheFactory.<clinit>(CacheFactory.java:7)
+	at com.whos.sa.common.Config.createCache(Config.java:47)
+	at com.whos.sa.common.Config.<init>(Config.java:24)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: net.sf.ehcache.CacheManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1431)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1419)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1418)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1418)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1640)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1599)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1588)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:620)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1832)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1845)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1929)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:918)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:918)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:426)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply$mcV$sp(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at scala.util.Try$.apply(Try.scala:161)
+	at org.apache.spark.streaming.scheduler.Job.run(Job.scala:39)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply$mcV$sp(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:57)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler.run(JobScheduler.scala:223)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: net/sf/ehcache/CacheManager
+	at com.whos.sa.cache.impl.CrawlCacheManagerImpl.<init>(CrawlCacheManagerImpl.java:29)
+	at com.whos.sa.cache.CacheFactory.<clinit>(CacheFactory.java:7)
+	at com.whos.sa.common.Config.createCache(Config.java:47)
+	at com.whos.sa.common.Config.<init>(Config.java:24)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	... 3 more
+Caused by: java.lang.ClassNotFoundException: net.sf.ehcache.CacheManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 more
+)))
+2016-12-14 20:46:20.882 -[JobScheduler] ERROR org.apache.spark.streaming.scheduler.StreamingListenerBus  -StreamingListenerBus has already stopped! Dropping event StreamingListenerBatchCompleted(BatchInfo(1481719580000 ms,Map(0 -> StreamInputInfo(0,794,Map(offsets -> List(OffsetRange(topic: 'weibo_content2', partition: 0, range: [0 -> 259]), OffsetRange(topic: 'weibo_content2', partition: 1, range: [0 -> 271]), OffsetRange(topic: 'weibo_content2', partition: 2, range: [0 -> 264])), Description -> topic: weibo_content2	partition: 0	offsets: 0 to 259
+topic: weibo_content2	partition: 1	offsets: 0 to 271
+topic: weibo_content2	partition: 2	offsets: 0 to 264))),1481719580123,Some(1481719580134),Some(1481719580877),Map(0 -> OutputOperationInfo(1481719580000 ms,0,foreachRDD at sparkMySQL_weibo_emotion.scala:53,org.apache.spark.streaming.dstream.DStream.foreachRDD(DStream.scala:659)
+sparkMySQL_weibo_emotion$.main(sparkMySQL_weibo_emotion.scala:53)
+sparkMySQL_weibo_emotion.main(sparkMySQL_weibo_emotion.scala)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:144),Some(1481719580134),Some(1481719580877),Some(org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.NoClassDefFoundError: net/sf/ehcache/CacheManager
+	at com.whos.sa.cache.impl.CrawlCacheManagerImpl.<init>(CrawlCacheManagerImpl.java:29)
+	at com.whos.sa.cache.CacheFactory.<clinit>(CacheFactory.java:7)
+	at com.whos.sa.common.Config.createCache(Config.java:47)
+	at com.whos.sa.common.Config.<init>(Config.java:24)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: net.sf.ehcache.CacheManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1431)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1419)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1418)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1418)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1640)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1599)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1588)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:620)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1832)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1845)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1929)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:918)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:918)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:426)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply$mcV$sp(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at scala.util.Try$.apply(Try.scala:161)
+	at org.apache.spark.streaming.scheduler.Job.run(Job.scala:39)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply$mcV$sp(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:57)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler.run(JobScheduler.scala:223)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: net/sf/ehcache/CacheManager
+	at com.whos.sa.cache.impl.CrawlCacheManagerImpl.<init>(CrawlCacheManagerImpl.java:29)
+	at com.whos.sa.cache.CacheFactory.<clinit>(CacheFactory.java:7)
+	at com.whos.sa.common.Config.createCache(Config.java:47)
+	at com.whos.sa.common.Config.<init>(Config.java:24)
+	at com.whos.sa.common.Config.<clinit>(Config.java:18)
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	... 3 more
+Caused by: java.lang.ClassNotFoundException: net.sf.ehcache.CacheManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 more
+)))))
+2016-12-14 20:46:20.886 -[Executor task launch worker-2] ERROR org.apache.spark.executor.Executor  -Exception in task 2.0 in stage 0.0 (TID 2)
+java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-14 20:46:20.888 -[Executor task launch worker-2] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -[Container in shutdown] Uncaught exception in thread Thread[Executor task launch worker-2,5,main]
+java.lang.NoClassDefFoundError: Could not initialize class com.whos.sa.common.Config
+	at com.whos.sa.analysis.Analysis.<init>(Analysis.java:19)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:20)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-14 20:48:13.489 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 20:48:13.522 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting  -Starting remoting
+2016-12-14 20:48:13.655 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:50567]
+2016-12-14 20:48:14.254 -[main] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:48:14.262 -[main] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:48:14.262 -[main] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:48:14.263 -[main] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:48:14.263 -[main] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:48:15.063 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:48:15.064 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:48:15.064 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:48:15.064 -[JobGenerator] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:48:15.064 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:48:15.319 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:48:15.319 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:48:15.320 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:48:15.320 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:48:15.320 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:48:15.320 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:48:15.320 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:48:15.320 -[Executor task launch worker-1] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:48:15.321 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:48:15.321 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:48:15.683 -[Executor task launch worker-0] ERROR com.whos.sa.util.log.LogUtil  -java.lang.Exception: org.dom4j.DocumentException: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\config.xml (文件名、目录名或卷标语法不正确。) Nested exception: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\config.xml (文件名、目录名或卷标语法不正确。)
+2016-12-14 20:48:15.722 -[Executor task launch worker-0] WARN  net.sf.ehcache.config.ConfigurationFactory  -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/DN/Desktop/Zzz/ehcache-2.9.0.jar!/ehcache-failsafe.xml
+2016-12-14 20:48:16.065 -[Executor task launch worker-0] ERROR com.whos.sa.util.log.LogUtil  -java.io.FileNotFoundException: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\dictionary\BosonNLP_sentiment_score.txt (文件名、目录名或卷标语法不正确。)
+2016-12-14 20:48:16.080 -[Executor task launch worker-0] ERROR org.apache.spark.executor.Executor  -Exception in task 0.0 in stage 0.0 (TID 0)
+java.lang.NoClassDefFoundError: com/chenlb/mmseg4j/Seg
+	at com.whos.sa.seg.SegFactory.getSegmentation(SegFactory.java:10)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:33)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:47)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:22)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.chenlb.mmseg4j.Seg
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 21 more
+2016-12-14 20:48:16.094 -[Executor task launch worker-0] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -Uncaught exception in thread Thread[Executor task launch worker-0,5,main]
+java.lang.NoClassDefFoundError: com/chenlb/mmseg4j/Seg
+	at com.whos.sa.seg.SegFactory.getSegmentation(SegFactory.java:10)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:33)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:47)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:22)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.chenlb.mmseg4j.Seg
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 21 more
+2016-12-14 20:48:16.098 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:48:16.099 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:48:16.099 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:48:16.099 -[Executor task launch worker-2] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:48:16.099 -[Executor task launch worker-2] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:48:16.100 -[task-result-getter-0] ERROR org.apache.spark.scheduler.TaskSetManager  -Task 0 in stage 0.0 failed 1 times; aborting job
+2016-12-14 20:48:16.112 -[JobScheduler] ERROR org.apache.spark.streaming.scheduler.StreamingListenerBus  -StreamingListenerBus has already stopped! Dropping event StreamingListenerOutputOperationCompleted(OutputOperationInfo(1481719695000 ms,0,foreachRDD at sparkMySQL_weibo_emotion.scala:53,org.apache.spark.streaming.dstream.DStream.foreachRDD(DStream.scala:659)
+sparkMySQL_weibo_emotion$.main(sparkMySQL_weibo_emotion.scala:53)
+sparkMySQL_weibo_emotion.main(sparkMySQL_weibo_emotion.scala)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:144),Some(1481719695100),Some(1481719696110),Some(org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.NoClassDefFoundError: com/chenlb/mmseg4j/Seg
+	at com.whos.sa.seg.SegFactory.getSegmentation(SegFactory.java:10)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:33)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:47)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:22)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.chenlb.mmseg4j.Seg
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 21 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1431)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1419)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1418)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1418)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1640)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1599)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1588)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:620)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1832)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1845)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1929)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:918)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:918)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:426)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply$mcV$sp(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at scala.util.Try$.apply(Try.scala:161)
+	at org.apache.spark.streaming.scheduler.Job.run(Job.scala:39)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply$mcV$sp(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:57)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler.run(JobScheduler.scala:223)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: com/chenlb/mmseg4j/Seg
+	at com.whos.sa.seg.SegFactory.getSegmentation(SegFactory.java:10)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:33)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:47)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:22)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	... 3 more
+Caused by: java.lang.ClassNotFoundException: com.chenlb.mmseg4j.Seg
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 21 more
+)))
+2016-12-14 20:48:16.114 -[Executor task launch worker-2] ERROR org.apache.spark.executor.Executor  -Exception in task 2.0 in stage 0.0 (TID 2)
+java.lang.NoClassDefFoundError: com/chenlb/mmseg4j/Seg
+	at com.whos.sa.seg.SegFactory.getSegmentation(SegFactory.java:10)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:33)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:47)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:22)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.chenlb.mmseg4j.Seg
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 21 more
+2016-12-14 20:48:16.116 -[JobScheduler] ERROR org.apache.spark.streaming.scheduler.StreamingListenerBus  -StreamingListenerBus has already stopped! Dropping event StreamingListenerBatchCompleted(BatchInfo(1481719695000 ms,Map(0 -> StreamInputInfo(0,794,Map(offsets -> List(OffsetRange(topic: 'weibo_content2', partition: 0, range: [0 -> 259]), OffsetRange(topic: 'weibo_content2', partition: 1, range: [0 -> 271]), OffsetRange(topic: 'weibo_content2', partition: 2, range: [0 -> 264])), Description -> topic: weibo_content2	partition: 0	offsets: 0 to 259
+topic: weibo_content2	partition: 1	offsets: 0 to 271
+topic: weibo_content2	partition: 2	offsets: 0 to 264))),1481719695093,Some(1481719695100),Some(1481719696110),Map(0 -> OutputOperationInfo(1481719695000 ms,0,foreachRDD at sparkMySQL_weibo_emotion.scala:53,org.apache.spark.streaming.dstream.DStream.foreachRDD(DStream.scala:659)
+sparkMySQL_weibo_emotion$.main(sparkMySQL_weibo_emotion.scala:53)
+sparkMySQL_weibo_emotion.main(sparkMySQL_weibo_emotion.scala)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:144),Some(1481719695100),Some(1481719696110),Some(org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.NoClassDefFoundError: com/chenlb/mmseg4j/Seg
+	at com.whos.sa.seg.SegFactory.getSegmentation(SegFactory.java:10)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:33)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:47)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:22)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.chenlb.mmseg4j.Seg
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 21 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1431)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1419)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1418)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:47)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1418)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:799)
+	at scala.Option.foreach(Option.scala:236)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:799)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1640)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1599)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1588)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:620)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1832)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1845)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1929)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1.apply(RDD.scala:918)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:918)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1.apply(sparkMySQL_weibo_emotion.scala:53)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.DStream$$anonfun$foreachRDD$1$$anonfun$apply$mcV$sp$3.apply(DStream.scala:661)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1$$anonfun$apply$mcV$sp$1.apply(ForEachDStream.scala:50)
+	at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:426)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply$mcV$sp(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at org.apache.spark.streaming.dstream.ForEachDStream$$anonfun$1.apply(ForEachDStream.scala:49)
+	at scala.util.Try$.apply(Try.scala:161)
+	at org.apache.spark.streaming.scheduler.Job.run(Job.scala:39)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply$mcV$sp(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler$$anonfun$run$1.apply(JobScheduler.scala:224)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:57)
+	at org.apache.spark.streaming.scheduler.JobScheduler$JobHandler.run(JobScheduler.scala:223)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: com/chenlb/mmseg4j/Seg
+	at com.whos.sa.seg.SegFactory.getSegmentation(SegFactory.java:10)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:33)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:47)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:22)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	... 3 more
+Caused by: java.lang.ClassNotFoundException: com.chenlb.mmseg4j.Seg
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 21 more
+)))))
+2016-12-14 20:48:16.115 -[Executor task launch worker-2] ERROR org.apache.spark.util.SparkUncaughtExceptionHandler  -[Container in shutdown] Uncaught exception in thread Thread[Executor task launch worker-2,5,main]
+java.lang.NoClassDefFoundError: com/chenlb/mmseg4j/Seg
+	at com.whos.sa.seg.SegFactory.getSegmentation(SegFactory.java:10)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:33)
+	at com.whos.sa.analysis.Analysis.parse(Analysis.java:47)
+	at sparkMySQL_weibo_emotion$.Analysis_emotion(sparkMySQL_weibo_emotion.scala:22)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:50)
+	at sparkMySQL_weibo_emotion$$anonfun$1.apply(sparkMySQL_weibo_emotion.scala:47)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:61)
+	at sparkMySQL_weibo_emotion$$anonfun$main$1$$anonfun$apply$1.apply(sparkMySQL_weibo_emotion.scala:54)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.rdd.RDD$$anonfun$foreachPartition$1$$anonfun$apply$33.apply(RDD.scala:920)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.chenlb.mmseg4j.Seg
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 21 more
+2016-12-14 20:50:59.358 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger  -Slf4jLogger started
+2016-12-14 20:50:59.391 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting  -Starting remoting
+2016-12-14 20:50:59.527 -[sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting  -Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.31.154:50634]
+2016-12-14 20:51:00.085 -[main] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:51:00.096 -[main] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:51:00.096 -[main] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:51:00.096 -[main] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:51:00.097 -[main] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:51:05.095 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:51:05.096 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:51:05.096 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:51:05.096 -[JobGenerator] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:51:05.097 -[JobGenerator] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:51:05.388 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:51:05.388 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:51:05.388 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:51:05.389 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:51:05.389 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:51:05.389 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:51:05.389 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:51:05.389 -[Executor task launch worker-1] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:51:05.389 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:51:05.390 -[Executor task launch worker-1] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:51:05.758 -[Executor task launch worker-0] ERROR com.whos.sa.util.log.LogUtil  -java.lang.Exception: org.dom4j.DocumentException: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\config.xml (文件名、目录名或卷标语法不正确。) Nested exception: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\config.xml (文件名、目录名或卷标语法不正确。)
+2016-12-14 20:51:05.773 -[Executor task launch worker-0] WARN  net.sf.ehcache.config.ConfigurationFactory  -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/DN/Desktop/Zzz/ehcache-2.9.0.jar!/ehcache-failsafe.xml
+2016-12-14 20:51:05.954 -[Executor task launch worker-0] ERROR com.whos.sa.util.log.LogUtil  -java.io.FileNotFoundException: file:\C:\Users\DN\Desktop\Zzz\zg-sa.jar!\com\whos\sa\common\config\dictionary\BosonNLP_sentiment_score.txt (文件名、目录名或卷标语法不正确。)
+2016-12-14 20:51:05.958 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -look up in mmseg.dic.path=null
+2016-12-14 20:51:05.958 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -look up in classpath=file:/C:/Users/DN/Desktop/Zzz/mmseg4j-core-1.10.0.jar!/data
+2016-12-14 20:51:05.958 -[Executor task launch worker-0] WARN  com.chenlb.mmseg4j.Dictionary  -defalut dic path=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data not exist
+2016-12-14 20:51:05.959 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -try to load dir=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data
+2016-12-14 20:51:05.971 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -chars loaded time=12ms, line=12638, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\chars.dic
+2016-12-14 20:51:06.061 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -words loaded time=89ms, line=149853, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\words.dic
+2016-12-14 20:51:06.063 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -load all dic use time=104ms
+2016-12-14 20:51:06.064 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -unit loaded time=1ms, line=22, on file=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data\units.dic
+2016-12-14 20:51:06.095 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Verifying properties
+2016-12-14 20:51:06.095 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property auto.offset.reset is overridden to smallest
+2016-12-14 20:51:06.095 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property group.id is overridden to 
+2016-12-14 20:51:06.095 -[Executor task launch worker-0] WARN  kafka.utils.VerifiableProperties  -Property serializer.class is not valid
+2016-12-14 20:51:06.096 -[Executor task launch worker-0] INFO  kafka.utils.VerifiableProperties  -Property zookeeper.connect is overridden to 
+2016-12-14 20:51:06.109 -[Executor task launch worker-0] INFO  com.chenlb.mmseg4j.Dictionary  -try to load dir=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data
+2016-12-14 20:51:08.614 -[Executor task launch worker-1] INFO  com.chenlb.mmseg4j.Dictionary  -try to load dir=file:\C:\Users\DN\Desktop\Zzz\mmseg4j-core-1.10.0.jar!\data

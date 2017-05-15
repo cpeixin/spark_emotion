@@ -1,0 +1,2323 @@
+{
+  "mappings": {
+    "women": {
+      "properties": {
+        "tags": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "name_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "designer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "Area": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "city": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "id": {
+          "type": "object",
+          "properties": {
+            "website_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "brand_productid": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "src_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shelvetime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "markettime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "markettime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "firstseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "lastseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "pd_src_img_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "category": {
+          "properties": {
+            "indextype": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "style": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "description":{
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "brand": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "marketprice": {
+          "type": "float",
+          "index": "not_analyzed"
+        },
+        "discountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "price": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "color": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "color_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "material": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "material_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "fashionelements": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "fashionelements_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "print": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "print_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "length": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "tech": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "tech_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "style": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "style_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sales": {
+          "type": "integer"
+        },        
+        "saleslist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "stocklist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },   
+        "storeup": {
+          "type": "integer"
+        },
+        "storeuplist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "commentcount": {
+          "type": "integer"
+        },
+        "commentcountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "otherinfo": {
+          "type": "nested",
+          "properties": {
+          }
+        }
+      }
+    },
+    "men": {
+      "properties": {
+        "tags": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "name_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "designer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "Area": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "city": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "id": {
+          "type": "object",
+          "properties": {
+            "website_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "brand_productid": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "src_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shelvetime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "markettime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "markettime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "firstseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "lastseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "pd_src_img_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "category": {
+          "properties": {
+            "indextype": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "style": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "description":{
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "brand": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "marketprice": {
+          "type": "float",
+          "index": "not_analyzed"
+        },
+        "discountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "price": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "color": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "color_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "material": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "material_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "fashionelements": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "fashionelements_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "print": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "print_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "length": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "tech": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "tech_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "style": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "style_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sales": {
+          "type": "integer"
+        },
+        "saleslist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "stocklist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "storeup": {
+          "type": "integer"
+        },
+         "storeuplist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "commentcount": {
+          "type": "integer"
+        },
+        "commentcountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "otherinfo": {
+          "type": "nested",
+          "properties": {
+          }
+        }
+      }
+    },
+    "underwaist": {
+      "properties": {
+        "tags": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "name_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "designer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "Area": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "city": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "id": {
+          "type": "object",
+          "properties": {
+            "website_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "brand_productid": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "src_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shelvetime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "markettime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "markettime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "firstseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "lastseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "pd_src_img_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "category": {
+          "properties": {
+            "indextype": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "style": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "description":{
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "brand": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "marketprice": {
+          "type": "float",
+          "index": "not_analyzed"
+        },
+        "discountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "price": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "color": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "color_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "material": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "material_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "fashionelements": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "fashionelements_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "print": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "print_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "length": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "tech": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "tech_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "style": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "style_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sales": {
+          "type": "integer"
+        },
+        "saleslist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "stocklist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "storeup": {
+          "type": "integer"
+        },
+         "storeuplist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "commentcount": {
+          "type": "integer"
+        },
+        "commentcountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "otherinfo": {
+          "type": "nested",
+          "properties": {
+          }
+        }
+      }
+    },
+    "children": {
+      "properties": {
+        "tags": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "name_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "designer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "Area": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "city": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "id": {
+          "type": "object",
+          "properties": {
+            "website_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "brand_productid": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "src_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shelvetime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "markettime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "markettime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "firstseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "lastseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "pd_src_img_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "category": {
+          "properties": {
+            "indextype": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "style": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "description":{
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "brand": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "marketprice": {
+          "type": "float",
+          "index": "not_analyzed"
+        },
+        "discountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "price": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "color": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "color_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "material": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "material_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "fashionelements": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "fashionelements_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "print": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "print_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "length": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "tech": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "style": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "style_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sales": {
+          "type": "integer"
+        },
+        "saleslist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "stocklist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "storeup": {
+          "type": "integer"
+        },
+         "storeuplist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "commentcount": {
+          "type": "integer"
+        },
+        "commentcountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "otherinfo": {
+          "type": "nested",
+          "properties": {
+          }
+        }
+      }
+    },
+    "outdoor": {
+      "properties": {
+        "tags": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "name_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "designer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "Area": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "city": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "id": {
+          "type": "object",
+          "properties": {
+            "website_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "brand_productid": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "src_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shelvetime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "markettime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "markettime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "firstseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "lastseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "pd_src_img_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "category": {
+          "properties": {
+            "indextype": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "style": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "description":{
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "brand": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "marketprice": {
+          "type": "float",
+          "index": "not_analyzed"
+        },
+        "discountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "price": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "color": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "color_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "material": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "material_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "fashionelements": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "fashionelements_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "print": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "print_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "length": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "tech": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "tech_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "style": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "style_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sales": {
+          "type": "integer"
+        },
+        "saleslist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "stocklist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "storeup": {
+          "type": "integer"
+        },
+         "storeuplist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "commentcount": {
+          "type": "integer"
+        },
+        "commentcountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "otherinfo": {
+          "type": "nested",
+          "properties": {
+          }
+        }
+      }
+    },
+    "sport": {
+      "properties": {
+        "tags": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "name_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "designer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "Area": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "city": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "id": {
+          "type": "object",
+          "properties": {
+            "website_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "brand_productid": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "src_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shelvetime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "markettime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "markettime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "firstseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "lastseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "pd_src_img_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "category": {
+          "properties": {
+            "indextype": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "style": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "description":{
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "brand": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "marketprice": {
+          "type": "float",
+          "index": "not_analyzed"
+        },
+        "discountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "price": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "color": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "color_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "material": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "material_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "fashionelements": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "fashionelements_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "print": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "print_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "length": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "tech": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "tech_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "style": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "style_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sales": {
+          "type": "integer"
+        },
+        "saleslist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "stocklist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "storeup": {
+          "type": "integer"
+        },
+         "storeuplist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "commentcount": {
+          "type": "integer"
+        },
+        "commentcountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "otherinfo": {
+          "type": "nested",
+          "properties": {
+          }
+        }
+      }
+    },
+    "shoes": {
+      "properties": {
+        "tags": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "name_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "designer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "Area": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "city": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "id": {
+          "type": "object",
+          "properties": {
+            "website_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "brand_productid": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "src_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shelvetime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "markettime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "markettime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "firstseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "lastseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "pd_src_img_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "category": {
+          "properties": {
+            "indextype": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "style": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "description":{
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "brand": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "marketprice": {
+          "type": "float",
+          "index": "not_analyzed"
+        },
+        "discountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "price": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "color": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "color_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "fashionelements": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "fashionelements_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "print": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "print_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "length": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "tech": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "tech_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "style": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "style_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sleevemodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "collarmodel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "uppermaterial": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "uppermaterial_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "liningmaterial": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "liningmaterial_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "solematerial": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "solematerial_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "closed": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "closed_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "toeStyle": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "toeStyle_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "heel": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "heel_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "features": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "features_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "leatherstyle": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "leatherstyle_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "occasion": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "occasion_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "sales": {
+          "type": "integer"
+        },
+        "saleslist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "stocklist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "storeup": {
+          "type": "integer"
+        },
+         "storeuplist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "commentcount": {
+          "type": "integer"
+        },
+        "commentcountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "count": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "otherinfo": {
+          "type": "nested",
+          "properties": {
+          }
+        }
+      }
+    }
+  }
+}

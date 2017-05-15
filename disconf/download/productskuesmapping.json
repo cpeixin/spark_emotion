@@ -1,0 +1,374 @@
+{
+  "mappings": {
+    "smartwatch": {
+      "properties": {
+        "tags": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "name_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "designer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "object",
+          "properties": {
+            "Area": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "city": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "id": {
+          "type": "object",
+          "properties": {
+            "website_id": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "brand_productid": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shopname": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "src_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "shelvetime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "markettime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "markettime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "firstseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "lastseentime": {
+          "type": "date",
+          "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+          "index": "not_analyzed"
+        },
+        "pd_src_img_url": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "category": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "brand_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "marketprice": {
+          "type": "float",
+          "index": "not_analyzed"
+        },
+        "discountlist": {
+          "type": "nested",
+          "properties": {
+            "time": {
+              "type": "date",
+              "format": "yyyy/MM/dd HH:mm:ss||yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||yyyy-MM-dd",
+              "index": "not_analyzed"
+            },
+            "price": {
+              "type": "float",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "color": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "color_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "model_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+
+        "standbytime": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "standbytime_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "batterycapacity": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "batterycapacity_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "waterproof": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "waterproof_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "resolution": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "resolution_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "memory": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "memory_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "video": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "video_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "multimediamessage": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "multimediamessage_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "thickness": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "thickness_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "earphone": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "earphone_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "phonecard": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "phonecard_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "weight": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "weight_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "perimeter": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "perimeter_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "camera": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "camera_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "system": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "system_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "size": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "size_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "music": {
+          "type": "string",
+          "fields": {
+            "raw": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "music_alias": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "otherinfo": {
+          "type": "nested",
+          "properties": {
+          }
+        }
+      }
+    }
+  }
+}
